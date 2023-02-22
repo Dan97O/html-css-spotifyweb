@@ -55,7 +55,18 @@ img{
     background-color: aqua;
 }
 
+.debug .sidebar{
+    background-color: coral;
+}
 
+.debug .sidebar_top{
+    background-color: rgba(4, 110, 75, 0.699);
+}
+
+
+.debug .sidebar_bottom{
+    background-color: rgb(37, 34, 204);
+}
 
 
 /* #endregion Debug */
@@ -71,11 +82,24 @@ img{
 /* #region Main */
 
 .top{
-    height: calc(100vh - 70px)
+    height: calc(100vh - 70px);
+    display: flex;
+}
+
+.top > .sidebar{
+    width: 70px;
+    overflow: hidden;
+}
+
+.top .sidebar_top{
+    height: calc(100% - 60px);
 }
 
 
 
+.top .sidebar_bottom{
+    height: 60px;
+}
 
 
 
