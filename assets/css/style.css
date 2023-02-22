@@ -1,8 +1,24 @@
+
+/* #region Common */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --top: #080b12;
+    --primary: #141922;
+    --sidebar: #000000;
+    --footer: #282828;
+}
+
+
+
+/* #endregion Common */
+
+
 
 /* #region Utilities */
 
