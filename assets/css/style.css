@@ -28,7 +28,6 @@ a {
 /* #endregion Common */
 
 
-
 /* #region Utilities */
 
 img,
@@ -55,6 +54,10 @@ svg
     justify-content: space-between;
 }
 
+.grow_1{
+    flex-grow: 1;
+}
+
 .item_center{
     align-items: center;
 }
@@ -69,6 +72,22 @@ svg
 
 .mt_1{
     margin-top: 1rem;
+}
+
+.banner_top .btn{
+    border-radius: 20px;
+    padding: 10px 35px;
+    border: 1px solid var(--light);
+    color: var(--light);
+}
+
+/* colors */
+.white{
+    color: white;
+}
+
+.grey{
+    color: var(--icon);
 }
 
 /* #endregion Utilities */
@@ -98,17 +117,14 @@ svg
     background-color: rgb(37, 34, 204);
 }
 
-
+.debug .banner_top{
+    background-color: #a3a3a3;
+    height: 100px;
+    width: 100%;
+}
 
 
 /* #endregion Debug */
-
-
-
-
-
-
-
 
 
 /* #region Main */
@@ -162,7 +178,8 @@ svg
 }
 
 .icon_sidebar:hover, 
-.text_icon:hover{
+.text_icon:hover
+{
     color: var(--light);
 }
 
@@ -192,10 +209,23 @@ svg
 
 .install{
     margin-left: -3px;
-
 }
 
+.banner_top{
+    justify-content: flex-end;
+    height: 90px;
+    padding-right: 10px;
+    background-color: var(--top);
+    width: 100%;
+}
+
+.playlist{
+    display: none;
+}
+
+
 /* #endregion Main */
+
 
 /* #region @Media */
 
@@ -234,6 +264,55 @@ svg
         color: var(--icon);
     }
 
+    .playlist{
+        display: block;
+        
+        color: var(--light);
+        padding-left: 1rem;
+        padding-top: 1.5rem;
+        line-height: 25px;
+        color: var(--icon);
+    }
+
+    .list_playlist{
+        height: calc(100vh - 90px - 10px - 80px - 95px - 23px - 60px - 40px - 70px);
+        overflow-y: auto;
+       
+    }
+   
+    
+    .list_playlist a{
+        color: var(--icon);
+    }
+
+    .plus{
+        font-size: 20px;
+        color: var(--light);
+        background-color: var(--icon);
+        padding: 3px 5px;
+        margin-right: 10px;
+    }
+
+    .playlist h3{
+        color: var(--icon);
+    }
+
+    .list_playlist > li {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+    .playlist a:hover{
+        color: var(--light);
+    }
+    .playlist span:hover{
+        color: var(--light);
+    }
+
+    .playlist h3:hover{
+        color: var(--light);
+    }
+    
 }
 
 
@@ -243,18 +322,6 @@ svg
 
 
 /* #endregion @Media */
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* #region Footer */
