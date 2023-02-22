@@ -13,7 +13,7 @@
     --sidebar: #000000;
     --footer: #282828;
     --light: #ffffff;
-    --icon: #d2d2d2;
+    --icon: #a3a3a3;
 
 }
 
@@ -63,14 +63,13 @@ svg
     position: relative;
  }
  
- .p_1{
+.pl_1{
     padding-left: 1rem;
  }
 
 .mt_1{
     margin-top: 1rem;
 }
-
 
 /* #endregion Utilities */
 
@@ -168,9 +167,33 @@ svg
 }
 
 
+.sidebar_bottom img{
+    height: 20px;
+    color: var(--icon);
+    margin-right: 10px; 
+}
+
+.circle{
+    height: 20px;
+    fill: white;
+    background-color: var(--icon);
+    border-radius: 50%;
+}
+
+.sidebar_bottom span{
+    display: none;
+   
+}
+
+.sidebar_bottom div{
+    padding: 5px 0;
+}
 
 
+.install{
+    margin-left: -3px;
 
+}
 
 /* #endregion Main */
 
@@ -203,6 +226,12 @@ svg
     .text_icon{
         display: inline-block;
         vertical-align: middle;
+    }
+
+    .sidebar_bottom span{
+        display: inline-block;
+        height: 20px;
+        color: var(--icon);
     }
 
 }
