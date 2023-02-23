@@ -21,7 +21,6 @@
     <div class="top">
 
        
-
         <section class="sidebar d_flex direction_column content_between">
             
 
@@ -59,9 +58,12 @@
                     <a href="#"><h3>PLAYLIST</h3></a> 
                     <div>
                         <a class="mt_1 d_flex align_center" href="#">
-                            <span class="plus">
-                                +
-                            </span>
+                            <div class="plus">
+                                <span class="">
+                                    +
+                                </span>
+                            </div>
+                            
                             <span class="d_flex item_center grey">
                                 Crea Playlist
                             </span>
@@ -152,7 +154,7 @@
             <div class="sidebar_bottom">
                 <div class="install">
                     <a class="d_flex items_center" href="#">
-                        <img src="./assets/spotify/img/download.svg" alt="Download">
+                        <img class="icon_download" src="./assets/spotify/img/download.svg" alt="Download">
                         <span class="text_icon">Install app</span>
                     </a>
                 </div>
@@ -170,25 +172,18 @@
         </section>
         <!-- /.sidebar d_flex direction_column -->
 
-
-        
-        
-   
-
-
-
-
-            
-            <section class="content">
-                <section class="upgrade direction_column grow_1">
-                    <div class="banner_top">
-                        <div class="p_relative">
-                            <nav class="upgrade_btn">
-                                <a class="btn" href="#">EFFETTUA L'UPGRADE</a>
-                            </nav>
-                        </div>
+                  
+            <section class="content d_flex direction_column">
+                <div class="banner_top">
+                    <div class="p_relative">
+                        <nav class="upgrade_btn">
+                            <a class="btn" href="#">EFFETTUA L'UPGRADE</a>
+                        </nav>
                     </div>
-                    <!-- /banner top -->
+                </div>
+                <!-- /banner top -->
+               
+                    
                 
                     <nav class="banner_link">
                         <ul class="d_flex content_center wrap">
@@ -367,14 +362,12 @@
 
                     </section>
                     <!-- /all albums -->    
-                </section>
+               
             </section>
         <!-- /content -->  
     </div>
     <!-- /top -->
 </main>
-
-
 
 
 <footer class="bottom p_relative">
@@ -397,49 +390,40 @@
             </div>
             <!-- /footer left -->
 
-
-
-
-
-
-            <div class="footer_middle">
-                <div class="play_song">
-                    <a href="#">
-                         <i class="fa-solid fa-shuffle fa-fw"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-solid fa-backward-step fa-fw"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-regular fa-circle-play fa-xl fa-fw"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-solid fa-forward-step fa-fw"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-solid fa-rotate-right fa-fw"></i>
-                    </a>
-                </div>
-                <div class="times_song">
-                    <a href="#">
-                        <span>0.25</span>
-                    </a>                   
-                    <div class="time_song">
-                    <a href="#">
-                        <div class="current_time"></div>
-                    </a>                        
-                    </div>
-                    <a href="#">
-                        <span>4.35</span>
-                    </a>
-                </div>
-            </div>
-            <!-- /footer middle -->
-
-
-
-
-
+            
+<div class="footer_middle">
+    <div class="play_song">
+        <a href="#">
+            <i class="fa-solid fa-shuffle fa-fw"></i>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-backward-step fa-fw"></i>
+        </a>
+        <a href="#">
+            <i class="fa-regular fa-circle-play fa-xl fa-fw"></i>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-forward-step fa-fw"></i>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-rotate-right fa-fw"></i>
+        </a>
+    </div>
+    <div class="times_song">
+        <a href="#">
+            <span>0.25</span>
+        </a>                   
+        <div class="time_song">
+            <a href="#">
+                <div class="current_time"></div>
+            </a>                        
+        </div>
+        <a href="#">
+            <span>4.35</span>
+        </a>
+    </div>
+</div>
+<!-- /footer middle -->
 
 
             <div class="footer_right">
