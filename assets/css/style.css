@@ -265,13 +265,15 @@ img.logo_small{
 .banner_top .btn{
     border-radius: 20px;
     padding: 10px 17px;
-    border: 1px solid var(--light);
-    color: var(--light);
+    border: 1px solid var(--icon);
+    color: var(--icon);
 }
 
-
-.upgrade_btn .btn{
-    margin: 1rem;
+.btn:hover{
+    transition: 2s;
+    font-size: 20px;
+    border: 1px solid var(--light);
+    color: var(--light);
 }
 
 .playlist{
@@ -281,10 +283,12 @@ img.logo_small{
 .content{
    flex-grow: 1;
    background-color: var(--primary);
-   overflow-y: auto;
    width: calc(100% - 50px);
 }
 
+.container_album{
+    overflow-y: auto;
+}
 
 .banner_link{
     margin: 20px 10px;
@@ -337,6 +341,10 @@ img.logo_small{
 .album_info span{
     font-size: 12px;
     color: var(--icon);
+}
+
+.hoop{
+    border-radius: 50%
 }
 
 /* #endregion Main */
