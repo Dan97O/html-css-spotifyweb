@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Spotify</title>
 </head>
-<body class="debug">
+<body class="">
     
 <main>
 
@@ -167,18 +167,22 @@
 
         
         
-       
+   
 
+
+
+
+            
             <section class="content">
-
-                <section class="direction_column grow_1">
-                    <div class="banner_top d_flex item_center">
-                        <nav>
-                            <a class="btn" href="#">EFFETTUA L'UPGRADE</a>
-                        </nav>
+                <section class="upgrade direction_column grow_1">
+                    <div class="banner_top">
+                        <div class="p_relative">
+                            <nav class="upgrade_btn">
+                                <a class="btn" href="#">EFFETTUA L'UPGRADE</a>
+                            </nav>
+                        </div>
                     </div>
                     <!-- /banner top -->
-
                 
                 <nav class="banner_link">
                     <ul class="d_flex content_center wrap">
@@ -204,6 +208,8 @@
                 </nav>
                 <!-- /banner link -->
 
+            <section class="all_albums">
+
                 <div class="recent">
                     <div class="d_flex wrap">
                         <div>
@@ -211,9 +217,9 @@
                                 Recently played
                             </h2>
                         </div>
-                       
                     </div>
-                    <div class="albums d_flex wrap row">
+                </div>
+                <div class="albums d_flex wrap row">
                         <div class="col_6 col_md_3 col_lg_2">
                             <div class="album">
                                 <img src="./assets/spotify/img/metal_lifting.jpg" alt="">
@@ -287,11 +293,78 @@
                         <!-- /col_6 col_md_3 col_lg_2 -->
 
 
-                    </div>
+                </div>
+                <!-- /Albums1 -->
 
+                <div class="recent">
+                        <div class="d_flex wrap">
+                            <div>
+                                <h2>
+                                    Creato per John doe
+                                </h2>
+                                <span>Piu' ascolti, piu' accurati saranno i suggerimenti</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="albums d_flex wrap row">
+                        <div class="col_6 col_md_3 col_lg_2">
+                            <div class="album">
+                                <img src="./assets/spotify/img/radar.jpeg" alt="">
+                            </div>
+                            <div class="album_info">
+                                <h4>Release Radar</h4>
+                            </div>
+                        </div>
+                        <!-- /col_6 col_md_3 col_lg_2 -->
+                        <div class="col_6 col_md_3 col_lg_2">
+                            <div class="album">
+                                <img src="./assets/spotify/img/mixdaily.jpeg" alt="">
+                            </div>
+                            <div class="album_info">
+                                <h4>Daily Mix 1</h4>
+                            </div>
+                        </div>
 
                 </div>
-                <!-- /recently played -->
+                <!-- /Albums2 -->
+
+                <div class="recent">
+                    <div class="d_flex wrap">
+                        <div>
+                            <h2>
+                                Artisti piu' popolari
+                            </h2>
+                            <span>Piu' ascolti, piu' accurati saranno i suggerimenti</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="albums d_flex wrap row">
+                        <div class="col_6 col_md_3 col_lg_2">
+                            <div class="album">
+                                <img src="./assets/spotify/img/youg.jpeg" alt="">
+                            </div>
+                            <div class="album_info">
+                                <h4>Release Radar</h4>
+                            </div>
+                        </div>
+                        <!-- /col_6 col_md_3 col_lg_2 -->
+                        <div class="col_6 col_md_3 col_lg_2">
+                            <div class="album">
+                                <img src="./assets/spotify/img/einaudi.jpeg" alt="">
+                            </div>
+                            <div class="album_info">
+                                <h4>Daily Mix 1</h4>
+                            </div>
+                        </div>
+                </div>
+                <!-- /Albums3 -->
+
+            </section>
+            <!-- /all albums -->
+
+
+
+
 
                
 
@@ -309,6 +382,10 @@
        
 
     </div>
+    <!-- /top -->
+
+
+  
 
 
 </main>

@@ -132,7 +132,7 @@ svg
 
 .debug .banner_top{
     background-color: #a3a3a3;
-    height: 100px;
+  
     width: 100%;
 }
 
@@ -240,12 +240,28 @@ img.logo_small{
     margin-left: -3px;
 }
 
+.upgrade{
+    height: 90px;
+    position: relative;
+}
+
 .banner_top{
-    justify-content: flex-end;
+    width: 98%;
+    position: fixed;
     height: 90px;
     padding-right: 10px;
     background-color: var(--top);
-    width: 100%;
+    top: 0;
+}
+
+.upgrade_btn{
+ position: absolute;
+ top: 33px;
+ right: 137px;  
+}
+
+.upgrade_btn .btn{
+    margin: 1rem;
 }
 
 .playlist{
@@ -256,10 +272,12 @@ img.logo_small{
    flex-grow: 1;
    background-color: var(--primary);
    overflow-y: auto;
+   margin-top: 90px;
 }
 
+
 .banner_link{
-    margin: 0 10px;
+    margin: 20px 10px;
 }
 
 .banner_link li a {
@@ -271,8 +289,18 @@ img.logo_small{
 
 .recent{
     color: var(--light);
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     overflow-x: auto;
+}
+
+.recent h2{
+    margin-bottom: 10px;
+}
+
+.recent span{
+    font-size: 12px;
+    color: var(--icon);
+    margin-top: 1rem;
 }
 
 .albums{
