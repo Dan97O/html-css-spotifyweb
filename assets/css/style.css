@@ -659,7 +659,7 @@ img.logo_small{
 }
 
 .times_song{
-    width: 100%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -672,6 +672,7 @@ img.logo_small{
     border-radius: 5px;
     margin-right: 10px;
     margin-left: 10px;
+    width: 70%;
 }
 
 .current_time{
@@ -685,6 +686,18 @@ img.logo_small{
 .footer_middle span{
     color: var(--light);
 }
+
+.footer_right{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    color: var(--light);
+}
+
+
+
 /* #endregion Footer */
 
 
