@@ -301,6 +301,10 @@ img.logo_small{
     padding: 5px 10px;
 }
 
+.banner_link a:hover{
+    color: var(--light);
+}
+
 .recent{
     color: var(--light);
     padding: 1rem 1rem;
@@ -325,8 +329,24 @@ img.logo_small{
     width: 100%;
     aspect-ratio: 1 / 1;
     overflow: hidden;
-
 }
+
+/* .play{
+    filter: opacity(0);
+}
+
+
+.play:hover{
+    filter: opacity(1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--light);
+    z-index: 500;
+} */
+
+
 
 .album_info{
     padding-top: 10px;
@@ -417,7 +437,7 @@ img.logo_small{
     .container_logo{
         display: flex;
         align-items: center;
-        width: 90%;
+        width: 60%;
         height: 40px;
         margin: 10px 10px;
     }
@@ -468,12 +488,13 @@ img.logo_small{
         color: var(--icon);
     }
 
-    .plus{
-        font-size: 20px;
-        color: var(--light);
+    .plus span{
+        text-align: center;
         background-color: var(--icon);
-        padding: 0 5px;
-        margin-right: 5px;
+        color: var(--sidebar);
+        margin-right: 10px;
+        aspect-ratio: 1 / 1;
+        font-size: 2.5rem;
     }
 
     .playlist h3{
@@ -657,12 +678,29 @@ img.logo_small{
     padding-left: 2rem;
 }
 
+.icon_cover a:hover{
+    font-size: 14px;
+}
+
 .footer_left h4{
     color: var(--light);
+    font-size: 16px;
+}
+
+.footer_left h4:hover{
+    border-bottom: 1px solid var(--light);
+    width: 82%;
 }
 
 .footer_left a{
     color: var(--icon);
+    font-size: 12px;
+}
+
+.footer_left a:hover{
+    color: var(--light);
+    border-bottom: 1px solid var(--light);
+    width: 65%;
 }
 
 .play_song{
@@ -700,6 +738,15 @@ img.logo_small{
     width: 10%;
 }
 
+.fa-circle-play {
+    transition: transform 0.4s;
+  }
+
+.fa-circle-play:hover {
+    transform: scale(1.2);
+  }
+
+
 .footer_middle i,
 .footer_middle span{
     color: var(--light);
@@ -714,6 +761,22 @@ img.logo_small{
     color: var(--light);
 }
 
+.footer_right .times_song{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.icon_footer_right a{
+    color: var(--icon);
+}
+
+.icon_footer_right a:hover{
+    color: var(--light);
+    font-size: 18px;
+}
 
 
 /* #endregion Footer */
