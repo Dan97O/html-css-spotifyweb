@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Circular Std', sans-serif;
+  }
+
 :root{
     --top: #080b12;
     --primary: #141922;
@@ -139,6 +143,12 @@ svg
 .debug .content{
     background-color: red;
 }
+
+.debug .banner_footer div{
+    background-color: aqua;
+    border: 1px dashed;
+}
+
 
 /* #endregion Debug */
 
@@ -588,15 +598,52 @@ img.logo_small{
 
 
 
-.banner_footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
+
+
+.container_footer{
     height: 90px;
-    width: 100%;
+    background-color: var(--footer);
 }
 
+.footer_left{
+    width: calc(100% / 3);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
 
+.footer_middle{
+    width: calc(100% / 3);
+    height: 100%;
+
+}
+
+.footer_right{
+    width: calc(100% / 3);
+    height: 100%;
+
+}
+
+.cover{
+    width: 40px;
+}
+
+.info_cover{
+    padding: 0 10px;
+}
+
+.icon_cover{
+    padding-left: 2rem;
+}
+
+.footer_left h4{
+    color: var(--light);
+}
+
+.footer_left a{
+    color: var(--icon);
+}
 
 /* #endregion Footer */
 
