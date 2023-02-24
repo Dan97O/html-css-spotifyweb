@@ -18,6 +18,7 @@ body {
     --footer: #282828;
     --light: #ffffff;
     --icon: #a3a3a3;
+    --green: #adff2f;
 
 }
 
@@ -197,6 +198,7 @@ img.logo_small{
     color: var(--icon);
 }
 
+
 .text_icon{
     display: none;
     color: var(--icon);
@@ -222,13 +224,13 @@ img.logo_small{
 }
 
 .icon_download{
-    margin-left: 2px;
-    width: 16px;
+    width: 20px;
 }
 
 .circle{
-    height: 20px;
+    width: 22px;
     fill: white;
+    aspect-ratio: 1 / 1;
     background-color: var(--icon);
     border-radius: 50%;
 }
@@ -305,6 +307,13 @@ img.logo_small{
     color: var(--light);
 }
 
+.border_bottom
+{
+    border-bottom: 1px solid #adff2f;
+    width: 50px;
+    margin: 0 29px;
+}
+
 .recent{
     color: var(--light);
     padding: 1rem 1rem;
@@ -356,7 +365,6 @@ img.logo_small{
 }
 
 
-
 .album_info{
     padding-top: 10px;
    text-align: center;
@@ -374,6 +382,7 @@ img.logo_small{
 
 .hoop{
     border-radius: 50%
+    
 }
 
 /* #endregion Main */
@@ -434,6 +443,13 @@ img.logo_small{
 
 /* #region @Media */
 
+@media screen and (max-height: 456px) {
+    .sidebar .playlist{
+        display: none;
+    }
+    
+}
+
 @media screen and (max-width: 480px){
 
     .footer_left .icon_cover{
@@ -465,6 +481,27 @@ img.logo_small{
     .icon_footer_right a:nth-child(2){
         display: none;
     }
+
+    .banner_top .btn{
+        border-radius: 20px;
+        padding: 5px 8px;
+        border: 1px solid var(--icon);
+        color: var(--icon);
+    }
+    
+    .btn:hover{
+        transition: 2s;
+        font-size: 16px;
+        border: 1px solid var(--light);
+        color: var(--light);
+    }
+
+    .install a,
+    .profile a 
+    {
+        justify-content: center;
+    }
+
 
 }
 
@@ -524,7 +561,33 @@ img.logo_small{
        font-size: 14px;
     }
    
+    .list_playlist::-webkit-scrollbar,
+    .container_album::-webkit-scrollbar
+    {
+        width: 5px;
+    }
+
+    .list_playlist::-webkit-scrollbar-track,
+    .container_album::-webkit-scrollbar-track
+    {
+        background: var(--sidebar) ;
+    }
+
+    .list_playlist::-webkit-scrollbar-thumb,
+    .container_album::-webkit-scrollbar-thumb
+    {
+        background: var(--icon); 
+        border-radius: 10px;
+    }
     
+
+    .list_playlist::-webkit-scrollbar-thumb:hover,
+    .container_album::-webkit-scrollbar-thumb:hover
+    {
+        background: var(--light);
+    }
+
+
     .list_playlist a{
         color: var(--icon);
     }
@@ -534,6 +597,7 @@ img.logo_small{
         background-color: var(--icon);
         color: var(--sidebar);
         margin-right: 10px;
+        padding: 0px 10px;
         aspect-ratio: 1 / 1;
         font-size: 2.5rem;
     }
