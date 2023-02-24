@@ -443,11 +443,18 @@ img.logo_small{
 
 /* #region @Media */
 
+@media screen and (max-height: 360px){
+    .sidebar_bottom{
+        display: none;
+    }
+    
+}
+
 @media screen and (max-height: 456px) {
     .sidebar .playlist{
         display: none;
     }
-    
+
 }
 
 @media screen and (max-width: 480px){
